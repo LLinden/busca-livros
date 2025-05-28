@@ -15,7 +15,7 @@ const totalBooks = ref(0)
 const previousEndpoint = ref(null)
 const nextEndpoint = ref(null)
 
-// Função para se comunicar com o serviço da API de livros
+// função para se comunicar com o serviço da API de livros
 async function getBookData(searchValue) {
     const result = await axios.get(`https://gutendex.com/books/?search=${searchValue}&limit=10$copyright=false&mime_type=image/jpeg`);
 
